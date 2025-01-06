@@ -1,24 +1,26 @@
 # Laravel MCP Client
 
-Laravel MCP (Message Control Protocol) Client is a package that integrates Anthropic's Claude AI model with custom tool servers, allowing you to extend Claude's capabilities with your own tools and services.
+Disclosure: This package was designed and written Entirely by claude ai. I may have guided and nuggged it in a few places, but the code was written by claude ai.
+
+Laravel MCP (Message Context Protocol) Client is a package that integrates Anthropic's Claude AI model with custom tool servers, allowing you to extend Claude's capabilities with your own tools and services.
 
 ## Features
 
-- Seamless integration with Anthropic's Claude API
-- Tool server management and execution
-- Built-in queuing support for long-running tools
-- Event-driven architecture
-- Automatic chat title generation
-- Complete chat history management
-- Database persistence for conversations and tool executions
-- Soft deletes support
-- Comprehensive logging system
+-   Seamless integration with Anthropic's Claude API
+-   Tool server management and execution
+-   Built-in queuing support for long-running tools
+-   Event-driven architecture
+-   Automatic chat title generation
+-   Complete chat history management
+-   Database persistence for conversations and tool executions
+-   Soft deletes support
+-   Comprehensive logging system
 
 ## Requirements
 
-- PHP 8.3 or higher
-- Laravel 11.0 or higher
-- Anthropic API key
+-   PHP 8.3 or higher
+-   Laravel 11.0 or higher
+-   Anthropic API key
 
 ## Installation
 
@@ -181,9 +183,9 @@ $runner->success('Operation completed');
 
 The package dispatches several events you can listen for:
 
-- `MessageCreatedEvent`
-- `MessageProcessedEvent`
-- `MessageErrorEvent`
+-   `MessageCreatedEvent`
+-   `MessageProcessedEvent`
+-   `MessageErrorEvent`
 
 ## Testing
 
@@ -197,8 +199,8 @@ If you discover any security-related issues, please email security@scriptoshi.co
 
 ## Credits
 
-- [Scriptoshi](https://github.com/scriptoshi)
-- [All Contributors](../../contributors)
+-   [Scriptoshi](https://github.com/scriptoshi)
+-   [All Contributors](../../contributors)
 
 ## License
 
