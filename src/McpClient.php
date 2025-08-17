@@ -88,7 +88,7 @@ class McpClient
         $client = Anthropic::client(config('mcp.anthropic.api_key'));
         $result = $client->messages()->create([
             'model' => config('mcp.anthropic.model', 'claude-3-sonnet-20240229'),
-            'max_tokens' => config('mcp.anthropic.max_tokens', 1024),
+            'max_tokens' => (int)config('mcp.anthropic.max_tokens', 1024),
             'system' =>  config('mcp.system', null),
             'messages' => $this->getHistory($message),
             'tools' => $this->listTools()
